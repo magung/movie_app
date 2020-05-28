@@ -1,0 +1,5 @@
+rootProject.name = 'movie'
+include ':react-native-live-stream'
+project(':react-native-live-stream').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-live-stream/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
